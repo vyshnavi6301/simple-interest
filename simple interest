@@ -1,0 +1,15 @@
+def calculate_simple_interest(principal, rate, time):
+    # Convert rate from percentage to decimal
+    rate_decimal = rate / 100
+    
+    # Calculate simple interest
+    simple_interest = (principal * rate_decimal * time) / 100
+    
+    return simple_interest
+
+# Example usage:
+principal_amount = 1000
+annual_interest_rate = 5
+time_period = 2
+interest = calculate_simple_interest(principal_amount, annual_interest_rate, time_period)
+print("Simple Interest:", interest)
